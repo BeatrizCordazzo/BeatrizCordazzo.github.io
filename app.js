@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// -----------------------------
 	const GITHUB_USERNAME = 'BeatrizCordazzo';
 	const GITHUB_REPO_URL = 'https://github.com/BeatrizCordazzo/BeatrizCordazzo.github.io';
-	const CV_PDF_URL = './Cv_En.pdf';
+	const CV_PDF_URL = './documents/Cv_En.pdf';
 
 	const container = document.getElementById('github-repos');
 	const downloadBtn = document.getElementById('download-cv');
@@ -24,9 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		'Angular_Bootstrap',
 		'ReservasProyecto',
 		'APPMVC',
-		'Reservas',
-		'ProyectoAngular',
-		'gymProyecto',
 		'TiendaDiscos'
 	];
 
