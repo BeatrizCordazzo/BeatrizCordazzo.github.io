@@ -1,0 +1,91 @@
+:root {
+  --blue-600: #2b5876;
+  --blue-200: #e9f0f6;
+  --muted: #6b7280;
+  --font-sans:
+    "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+}
+
+#sidebar {
+  background: linear-gradient(180deg, #eaf3fb 0%, #f6fbff 100%);
+}
+
+.photo-wrapper img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.section-title {
+  color: var(--blue-600);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.dot-list {
+  list-style: none;
+  padding-left: 0;
+}
+.dot-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.4rem;
+}
+.dot-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--blue-600);
+}
+
+/* Small responsive tweaks */
+@media (max-width: 767px) {
+  #sidebar {
+    padding: 1.25rem;
+  }
+  .photo-wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Repo card */
+.repo-card {
+  border: 1px solid #e6edf3;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.repo-card h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+.repo-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Utility */
+.text-muted {
+  color: var(--muted) !important;
+}
+
+/* Work experience list with dash markers */
+.work-list { list-style: none; padding-left: 0; }
+.work-list li { position: relative; padding-left: 1.2rem; margin-bottom: .5rem; }
+.work-list li:before { content: "—"; position: absolute; left: 0; color: var(--blue-600); font-weight: 700; }
+
+/* Ensure card body stretches so action buttons sit at bottom and cards match height */
+.repo-card .card-body{display:flex;flex-direction:column;flex:1;padding:0.75rem}
+.repo-card .card-body .mt-auto{margin-top:auto}
