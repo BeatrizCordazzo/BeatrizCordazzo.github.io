@@ -1,105 +1,141 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Beatriz Moreira Cordazzo — Portfolio</title>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-		<script src="https://cdn.tailwindcss.com"></script>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body class="bg-gray-50 text-gray-800 font-sans">
-		<main class="container my-6">
-			<div class="row g-0 shadow-lg rounded overflow-hidden">
-				<aside class="col-md-4 bg-blue-50 p-5" id="sidebar">
-					<div class="text-center mb-4">
-						<div class="photo-wrapper mx-auto">
-							<img src="./documents/profile.jpeg" alt="Profile photo" class="rounded-full border-4 border-white shadow" />
-						</div>
-						<h2 class="mt-3 text-2xl font-bold">Beatriz Moreira Cordazzo</h2>
-						<p class="text-sm uppercase tracking-widest text-blue-700">Web Developer</p>
-					</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beatriz Moreira Cordazzo — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-					<section class="mt-4">
-						<h3 class="section-title">Contact</h3>
-						<ul class="list-unstyled ps-0">
-							<li class="d-flex align-items-start gap-2 my-2"><span class="icon">📞</span> +34 722 19 23 69</li>
-							<li class="d-flex align-items-start gap-2 my-2"><span class="icon">✉️</span> cordazzobea@gmail.com</li>
-							<li class="d-flex align-items-start gap-2 my-2"><span class="icon">📍</span> Valladolid, Spain</li>
-						</ul>
-					</section>
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">BMC</a>
+    <div class="nav-links">
+      <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+      <a href="#about" data-en="About" data-es="Sobre mí">About</a>
+      <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+      <button class="lang-toggle" id="langToggle">ES</button>
+    </div>
+  </nav>
 
-					<section class="mt-4">
-						<h3 class="section-title">Technical Skills</h3>
-						<ul class="dot-list">
-							<li>HTML5, CSS3, JavaScript</li>
-							<li>Responsive Web Design</li>
-							<li>Angular, Alpine.js</li>
-							<li>Bootstrap, Tailwind CSS</li>
-							<li>REST APIs, Git & GitHub</li>
-							<li>Java, PHP, Laravel, Symfony</li>
-							<li>MySQL</li>
-						</ul>
-					</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow" data-en="Full Stack Web Developer" data-es="Desarrolladora Web Full Stack">Full Stack Web Developer</p>
+      <h1 class="hero-name">Beatriz<br><em>Moreira Cordazzo</em></h1>
+      <p class="hero-sub" data-en="Building clean, functional interfaces from frontend to backend. Based in Valladolid, open to new opportunities." data-es="Construyendo interfaces limpias y funcionales, de frontend a backend. Valladolid, abierta a nuevas oportunidades.">Building clean, functional interfaces from frontend to backend. Based in Valladolid, open to new opportunities.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" data-en="See my work" data-es="Ver mis proyectos">See my work</a>
+        <a href="./documents/Cv_En.pdf" class="btn-ghost" download data-en="Download CV" data-es="Descargar CV">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="./documents/profile.jpeg" alt="Beatriz Moreira Cordazzo" />
+    </div>
+  </section>
 
-				</aside>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-tag" data-en="Work" data-es="Trabajo">Work</span>
+      <h2 data-en="Projects" data-es="Proyectos">Projects</h2>
+    </div>
+    <div id="projects-grid" class="projects-grid">
+      <!-- Injected by JS -->
+      <div class="project-skeleton"></div>
+      <div class="project-skeleton"></div>
+      <div class="project-skeleton"></div>
+    </div>
+  </section>
 
-				<section class="col-md-8 bg-white p-5">
-					<header class="mb-4">
-						<h1 class="display-6 fw-bold">Beatriz Moreira Cordazzo</h1>
-						<p class="lead text-muted">Web Developer seeking opportunities to grow and contribute.</p>
-						<div class="d-flex gap-2 mt-3">
-							<a id="download-cv" class="btn btn-outline-primary btn-sm" href="./documents/Cv_En.pdf" role="button">Download CV (PDF)</a>
-							
-						</div>
-					</header>
+  <!-- ABOUT -->
+  <section id="about" class="section section-about">
+    <div class="about-grid">
+      <div class="about-left">
+        <span class="section-tag" data-en="About" data-es="Sobre mí">About</span>
+        <h2 data-en="Who I am" data-es="Quién soy">Who I am</h2>
+        <p data-en="Junior Web Developer graduated in DAW (Web Application Development). I enjoy writing clean code, learning new technologies, and building things that actually work — both on the frontend and backend." data-es="Desarrolladora web junior graduada en DAW. Me gusta escribir código limpio, aprender nuevas tecnologías y construir cosas que funcionen de verdad, tanto en frontend como en backend.">Junior Web Developer graduated in DAW (Web Application Development). I enjoy writing clean code, learning new technologies, and building things that actually work — both on the frontend and backend.</p>
+        <p data-en="I recently finished my internship at EYSA, where I worked with Laravel, REST APIs and microservices on real projects, collaborating as part of a team." data-es="Recientemente terminé mis prácticas en EYSA, donde trabajé con Laravel, APIs REST y microservicios en proyectos reales, colaborando en equipo.">I recently finished my internship at EYSA, where I worked with Laravel, REST APIs and microservices on real projects, collaborating as part of a team.</p>
 
-					<article class="mb-4">
-						<h3 class="section-title">About Me</h3>
-						<p>
-							Web Developer graduated in Web Application Development (DAW). Experienced in both frontend and backend development. I have worked with Angular and Alpine.js alongside Tailwind CSS to build modern user interfaces, and with PHP and Java for backend development using Laravel and Symfony. I enjoy writing clean code, learning new technologies, and working as part of a team.
-						</p>
-					</article>
+        <div class="experience-block">
+          <div class="exp-item">
+            <span class="exp-role" data-en="Web Developer — Internship" data-es="Desarrolladora Web — Prácticas">Web Developer — Internship</span>
+            <span class="exp-company">EYSA · Valladolid</span>
+            <span class="exp-date">Sep 2025 – Dec 2025</span>
+            <ul class="exp-list">
+              <li data-en="Frontend: Alpine.js + Tailwind CSS" data-es="Frontend: Alpine.js + Tailwind CSS">Frontend: Alpine.js + Tailwind CSS</li>
+              <li data-en="Backend: Laravel, REST APIs, microservices" data-es="Backend: Laravel, APIs REST, microservicios">Backend: Laravel, REST APIs, microservices</li>
+              <li data-en="Frontend–backend integration in real projects" data-es="Integración frontend–backend en proyectos reales">Frontend–backend integration in real projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-					<article class="mb-4">
-						<h3 class="section-title">Education</h3>
-						<p class="mb-1"><strong>Higher Technician in Web Application Development (DAW)</strong></p>
-						<p class="text-sm text-muted">IES Ribiera de Castilla — Valladolid<br>Sept 2023 – 2025</p>
-					</article>
+      <div class="about-right">
+        <div class="skills-block">
+          <h4 data-en="Frontend" data-es="Frontend">Frontend</h4>
+          <div class="skills-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>Angular</span><span>React</span><span>Alpine.js</span>
+            <span>Tailwind CSS</span><span>Bootstrap</span><span>SASS</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <h4 data-en="Backend" data-es="Backend">Backend</h4>
+          <div class="skills-tags">
+            <span>PHP</span><span>Java</span><span>Laravel</span>
+            <span>Symfony</span><span>REST APIs</span><span>Microservices</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <h4 data-en="Tools" data-es="Herramientas">Tools</h4>
+          <div class="skills-tags">
+            <span>Git</span><span>GitHub</span><span>Docker</span>
+            <span>Azure DevOps</span><span>Power BI</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <h4 data-en="Languages" data-es="Idiomas">Languages</h4>
+          <div class="skills-tags">
+            <span data-en="Portuguese (Native)" data-es="Portugués (Nativo)">Portuguese (Native)</span>
+            <span data-en="Spanish (Fluent)" data-es="Español (Fluido)">Spanish (Fluent)</span>
+            <span data-en="English (Advanced)" data-es="Inglés (Avanzado)">English (Advanced)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					<article class="mb-4">
-						<h3 class="section-title">Work Experience</h3>
-						<h5 class="mb-1">Web Developer — Internship (FP DAW)</h5>
-						<p class="text-muted">Eysa — Valladolid · September 2025 – December 2025</p>
-						<ul class="work-list">
-							<li>Frontend development using Tailwind CSS and Alpine.js</li>
-							<li>Implementation of requests and consumption of REST APIs</li>
-							<li>Backend development with Laravel</li>
-							<li>Frontend–backend integration in real projects</li>
-						</ul>
-					</article>
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <div class="contact-inner">
+      <span class="section-tag" data-en="Contact" data-es="Contacto">Contact</span>
+      <h2 data-en="Let's talk" data-es="Hablemos">Let's talk</h2>
+      <p data-en="I'm currently open to junior developer positions. Feel free to reach out." data-es="Estoy buscando mi primera posición como desarrolladora junior. No dudes en escribirme.">I'm currently open to junior developer positions. Feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:cordazzobea@gmail.com" class="contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+          cordazzobea@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/beatriz-moreira-cordazzo-20315a3a1" target="_blank" class="contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/BeatrizCordazzo" target="_blank" class="contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
 
-					<article class="mb-4">
-						<h3 class="section-title">GitHub Projects</h3>
-						<p class="text-sm text-muted">Below are some repositories from GitHub.</p>
-						<div id="github-repos" class="row gy-3">
-							<!-- Repos will be injected here by app.js -->
-						</div>
-					</article>
+  <footer>
+    <p>© 2025 Beatriz Moreira Cordazzo</p>
+  </footer>
 
-					<article>
-						<h3 class="section-title">Languages</h3>
-						<ul class="dot-list">
-							<li>Portuguese: Native</li>
-							<li>English: Advanced / Fluent</li>
-							<li>Spanish: Advanced / Fluent</li>
-						</ul>
-					</article>
-				</section>
-			</div>
-		</main>
-
-		<script src="app.js"></script>
-	</body>
+  <script src="app.js"></script>
+</body>
 </html>
