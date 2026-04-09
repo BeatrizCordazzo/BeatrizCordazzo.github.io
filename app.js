@@ -39,7 +39,7 @@ const PROJECTS = [
   },
   {
     name: 'ToDo App',
-    repo: 'ToDo_App',
+    repo: 'ToDo-App',
     tags: ['PHP', 'MySQL', 'HTML', 'CSS'],
     type: { en: 'Full-stack App', es: 'App Full-stack' },
     desc: {
